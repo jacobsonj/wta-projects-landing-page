@@ -66,8 +66,8 @@ body {
 }
 
 .intro > img {
-    height: 10vh;
-    width: 1vw;
+    height: 120px;
+    width: 180px;
     object-fit: cover;
     border-radius: 3px;
 }
@@ -76,6 +76,8 @@ body {
 .renters {
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
+    flex-direction: column;
     background-color: #97cecc;;
     width: 100%;
     justify-content: center;
@@ -95,10 +97,12 @@ body {
 }
 
 .renters > a {
-    width: 100%;
+    width: 25%;
+    height: 6vh;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
     font-size: 24pt;
     text-decoration: none;
     color: rgb(224, 83, 40);
@@ -109,10 +113,13 @@ body {
 .owners {
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
+    flex-direction: column;
     background-color: #97cecc;
     width: 100%;
     justify-content: center;
     padding: 15px;
+    align-items: center;
     }
 
 .owners > div {
@@ -128,10 +135,12 @@ body {
 }
 
 .owners > a {
-    width: 100%;
+    width: 25%;
+    height: 6vh;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
     font-size: 24pt;
     text-decoration: none;
     color: rgb(224, 83, 40);
@@ -143,6 +152,8 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
+    flex-direction: column;
     background-color: rgb(224, 83, 40);
     height: 25%;
     width: 100%;
@@ -163,12 +174,31 @@ body {
 }
 
 .about > a {
-    width: 100%;
+    width: 25%;
+    height: 6vh;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    align-items: center; 
     font-size: 24pt;
     text-decoration: none;
     color: #97Cecc;
     background-color: rgb(226, 101, 63); 
     }
+
+    @media only screen and (min-width: 900px){
+    .renters {
+          width: 50%;
+          box-sizing: border-box;
+          
+      }  
+    .owners {
+        width: 50%;
+        box-sizing: border-box;
+        align-items: center;
+        flex-direction: column;
+    }  
+    .head {
+        justify-content: flex-start;
+    }
+      } 
